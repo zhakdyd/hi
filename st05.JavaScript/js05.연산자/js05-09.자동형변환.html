@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+    console.log('더하기 연산시 형변환');
+
+    // 덧셈 연산: 문자열 우선 변환
+    // 그외 연산: 숫자 우선 변환
+    
+    var resuit1 = 1+'2' // 숫자+문자=문자 로 변환
+    var resuit2 = '2'+true; // 문자+불린=문자 로 변환
+    var resuit3 = '15'-5; //문자-숫자=숫자 로 변환
+
+    console.log(resuit1)
+    console.log(resuit2)
+    console.log(resuit3)
+
+    //강제 형변환
+    var resuit4=String(1)+'2'; //12
+    var resuit5='15'-String(5); //10
+    var resuit6=Boolean('2')+true; //2
+
+    console.log(resuit4, typeof resuit4)
+    console.log(resuit5, typeof resuit5)
+    console.log(resuit6, typeof resuit6)
+
+    </script>
     <style></style>
     
 </head>
 <body>
 </body>
-</html>
+</html>

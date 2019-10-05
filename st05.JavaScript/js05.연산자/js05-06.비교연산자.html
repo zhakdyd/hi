@@ -2,7 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>�񱳿�����</title>
+    <title>비교연산자</title>
+    <script>
+    var x=3, y=4;
+    var r= ((x==3) && (y==3)); // (x==3) && (y==3): false
+    console.log('(x==3) && (y==3) :'+r);
+
+    var r= ((x==3) && (y!=3)); // (x==3) && (y!=3): ture
+    console.log('(x==3) && (y!=3) :'+r);
+
+    var r= ((x==3) || (y==3)); // (x==3) || (y==3): ture
+    console.log('(x==3) || (y==3) :'+r);
+
+    var r= ((x==3) || (y==4)); // (x==3) || (y==4): ture
+    console.log('(x==3) || (y==4) :'+r);
+
+    var r= ((x!=3) || (y==4)); // (x!=3) || (y==4): fure
+    console.log('(x!=3) || (y==4) :'+r);
+
+    var r= ((x!=3) || (y!=4)); // (x!=3) }} (y!=4): false
+    console.log('(x!=3) || (y!=4) :'+r);
+        //||은 or 연산자라고 불리며 피연산자 중 1개라도 ture면 ture를 반환
+        //&&은 and 연산자라고 불리며 피연사 중 1개라도 false면 false를 반환
+
+
+    </script>
     <style></style>
     
 </head>

@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>면적과 둘레 구하기</title>
+    <script>
+
+    //var w=5, h=10;
+    w=prompt("가로를 입력하세요."); //이렇게 입력받는 값은 '문자' 로 입력된다.
+    h=prompt("높이를 입력하세요.");
+
+    //문자를 숫자로 변환하는 작업
+    w=Number(w); //w에 입력되는or입력되어 있는 문자 값을 숫자로 변환하여 w에 넣는다.
+    h=Number(h);
+
+    var area=w*h, perimeter=2*(w+h);
+
+    console.log('사각형의 넓이: '+area);
+    console.log('사각형의 둘레: '+perimeter);
+
+
+    </script>
     <style></style>
     
 </head>
 <body>
 </body>
-</html>
+</html>
